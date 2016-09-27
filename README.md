@@ -42,7 +42,7 @@ The normal way in which you use this container is sharing an input-output direct
 ```
 and when you run the container you share this directory with the container as a volume :
 ```
- $ CONT=`docker run -v ~/qe-in-out:/home/qe/qe-in-out -P -d -t rinnocente/qe-full`
+ $ CONT=`docker run -v ~/qe-in-out:/home/qe/qe-in-out -P -d -t rinnocente/qe-ssh-ab`
  $ PORT=`docker port $CONT|sed -e 's#.*:##'`
  $ ssh -p $PORT qe@127.0.0.1
 ```
@@ -59,7 +59,7 @@ Or even remove it if you don't want to re-use it :
 $ docker rm -f $CONT
 ```
 ---
-The Dockerfile is on github : [Dockerfile](https://github.com/rinnocente/qe-full)
+The Dockerfile is on github : [Dockerfile](https://github.com/rinnocente/qe-ssh-ab)
 
 ### NB. this container is reachable via ssh through **your host port $PORT**, eventually from Internet at large.
 
