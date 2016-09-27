@@ -79,7 +79,8 @@ This is a  package with  all  serial binaries and also all the parallel binaries
          |-- C.pz-rrkjus.UPF                           (: pseudo-pot)
          |-- O.pz-rrkjus.UPF                           (: pseudo-pot)
          
-         
+```
+
 In the `bin` subdir of ```/home/qe``` there are the serial binaries that can be run directly without any further ado (being ```/home/qe/bin``` inserted in the ```PATH``` env variable).
 
 In the ```espresso-5.4.0``` subdir there are the sources and the Docs in the Doc subdir of it.
